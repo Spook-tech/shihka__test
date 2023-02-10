@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Source+Serif+Pro:wght@300;400;600;700&amp;display=swap&_v=20230211004738" rel="stylesheet"/>
   </head>
   <body> 
-    <div class="wrapper">
+    <div class="wrapper not-found-page">
       <header class="header">
         <div class="header__top">
           <div class="header__container"><a class="header__logo" href="index.html"><img src="img/logo.svg" alt=""/></a>
@@ -58,23 +58,25 @@
           </div>
         </div>
       </header>
-      <main> 
-        <div class="test-page">
-          <div class="test-page__container"> 
-            <ul class="test-page__links"> 
-              <li class="test-page__link"><a class="hover-effect" href="main.html"> Главная страница </a></li>
-              <li class="test-page__link"><a class="hover-effect" href="thanks.html"> Спасибо за заказ </a></li>
-              <li class="test-page__link"> <a class="hover-effect" href="cart.html">Корзина </a></li>
-              <li class="test-page__link"> <a class="hover-effect" href="product.html">Продукт </a></li>
-              <li class="test-page__link"> <a class="hover-effect" href="catalog.html">Каталог </a></li>
-              <li class="test-page__link"> <a class="hover-effect" href="account.html">Личный кабинет </a></li>
-              <li class="test-page__link"> <a class="hover-effect" href="404.html">404 </a></li>
-              <li class="test-page__link"> <a class="hover-effect" href="mission.html">Миссия </a></li>
-              <li class="test-page__link"> <a class="hover-effect" href="blog.html">Блог </a></li>
-              <li class="test-page__link"> <a class="hover-effect" href="about.html">О компании </a></li>
-            </ul>
-          </div>
+      <main>
+        <div class="background-images">
+          <div class="background-image-full"><img class="background-image" src="img/main-page/background2.png" alt=""/></div>
+          <div class="background-image-lines"><img class="background-image" src="img/icons/bg-lines2.svg" alt=""/></div>
         </div>
+        <section class="not-found">
+          <div class="not-found__container"> 
+            <div class="not-found__title beautiful-font">404</div>
+            <div class="not-found__subtitle">Похоже, мы не можем найти нужную Вам страницу...</div>
+            <div class="not-found__links">
+              <div class="not-found__links-text">Вот несколько полезных ссылок:</div>
+              <ul class="not-found__links-list"> 
+                <li><a class="not-found__links-link" href="blog.html">Новости</a></li>
+                <li><a class="not-found__links-link" href="about.html">О Компании</a></li>
+                <li><a class="not-found__links-link" href="catalog.html">Каталог</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
       <section class="sales">
         <div class="sales__container">

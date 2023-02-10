@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Заголовок</title>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- <style>body{opacity: 0;}</style>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20230211004738"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230211004738"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230211004738"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!-- <meta name="robots" content="noindex, nofollow">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Source+Serif+Pro:wght@300;400;600;700&amp;display=swap&_v=20230211004738" rel="stylesheet"/>
+  </head>
+  <body> 
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="header__container"><a class="header__logo" href="index.html"><img src="img/logo.svg" alt=""/></a>
+            <form class="header__search">
+              <button class="header__search__button"><img src="img/icons/search.svg" alt=""/></button>
+              <input class="header__input" id="header-search" type="text" required=""/>
+              <label class="fake-placeholder" for="header-search">Поиск продуктов</label>
+            </form>
+            <div class="header__city">
+              <div class="header__city__icon"><img src="img/icons/geo-tag.svg" alt=""/></div><a class="header__city__link" href="#">Москва</a>
+            </div>
+            <div class="header__phone">
+              <div class="header__phone__icon"><img src="img/icons/phone.svg" alt=""/></div>
+              <div class="header__phone__number"><a href="tel:+00000000">+7 (495) 822 10 03</a></div>
+            </div>
+            <div class="header__actions">
+              <button class="header__cart"><img src="img/icons/cart.svg" alt=""/></button>
+              <button class="header__favourites"><img src="img/icons/heart.svg" alt=""/></button>
+              <button class="header__account"><img src="img/icons/profile.svg" alt=""/></button>
+            </div>
+            <button class="header__burger"><span></span></button>
+          </div>
+        </div>
+        <div class="header__middle">
+          <div class="header__container">
+            <div class="header__search-mobile">
+              <button class="header__search-mobile__button"><img src="img/icons/search.svg" alt=""/></button>
+              <input type="text" placeholder="Поиск продуктов"/>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__container">
+            <ul class="header__links row justify-content-center">
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">Чай</a></li>
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">Книги</a></li>
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">Nutrifika</a></li>
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">Новости</a></li>
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main> 
+        <section class="account"> 
+          <div class="account__container"> 
+            <div class="account__row row"> 
+              <aside class="col-lg-4">
+                <div class="account__sidebar">
+                  <div class="account__sidebar__picture"> <img src="img/profile/girl.png" alt=""/></div>
+                  <div class="account__sidebar__top"> 
+                    <div class="account__sidebar__name">Иванова Анна Ивановна</div>
+                    <div class="account__sidebar__email gray">annaiv1234@gmail.com</div>
+                  </div>
+                  <div class="account__sidebar__bonuses">350 бонусов</div>
+                  <div class="account__sidebar__actions"> 
+                    <button class="account__sidebar__orders account__sidebar__orders-active hover-effect">
+                      <div class="account__sidebar__orders-img"> <img src="img/icons/stats.svg" alt=""/></div>
+                      <div class="account__sidebar__orders-text">Активные заказы</div>
+                    </button>
+                    <button class="account__sidebar__orders account__sidebar__orders-history hover-effect" data-tab="history"> 
+                      <div class="account__sidebar__orders-img"> <img src="img/icons/cloke.svg" alt=""/></div>
+                      <div class="account__sidebar__orders-text">История заказов</div>
+                    </button>
+                  </div>
+                  <div class="account__sidebar__links"> 
+                    <button class="account__sidebar__link" data-tab="orders"> 
+                      <div class="account__sidebar-img"> <img src="img/icons/cart.svg" alt=""/></div>
+                      <div class="account__sidebar-btn hover-effect">Корзина</div>
+                    </button>
+                    <button class="account__sidebar__link" data-tab="data"> 
+                      <div class="account__sidebar-img"> <img src="img/icons/settings.svg" alt=""/></div>
+                      <div class="account__sidebar-btn hover-effect">Мои данные</div>
+                    </button>
+                    <button class="account__sidebar__link" data-tab="bonuses"> 
+                      <div class="account__sidebar-img"> <img src="img/icons/star-blue.svg" alt=""/></div>
+                      <div class="account__sidebar-btn hover-effect _active">Бонусная программа</div>
+                    </button>
+                  </div>
+                  <button class="account__sidebar-btn-leave button-blue">Выход</button>
+                </div>
+              </aside>
+              <div class="col-lg-8">
+                <div class="account-item account__data tab-text" id="tab-data"> 
+                  <div class="account__data__title account__title">Мои данные</div>
+                  <form class="account__data__form" action="URL">
+                    <div class="account__data__input-wrapper"> 
+                      <label class="account__data__label" for="surname">Фамилия</label>
+                      <input class="account__data__input" type="text" id="surname"/>
+                    </div>
+                    <div class="account__data__input-wrapper"> 
+                      <label class="account__data__label" for="name">Имя</label>
+                      <input class="account__data__input" type="text" id="name"/>
+                    </div>
+                    <div class="account__data__input-wrapper"> 
+                      <label class="account__data__label" for="patronymic">Отчество</label>
+                      <input class="account__data__input" type="text" id="patronymic"/>
+                    </div>
+                    <div class="account__data__input-wrapper"> 
+                      <label class="account__data__label" for="#">Ваш e-mail</label>
+                      <div class="account__data__input-email">annaiv1234@gmail.com</div>
+                    </div>
+                    <div class="account__data__input-wrapper"> 
+                      <label class="account__data__label" for="password">Пароль</label>
+                      <button class="button-blue" id="password">Изменить</button>
+                    </div>
+                    <div class="account__data__input-wrapper"> 
+                      <label class="account__data__label" for="phone">Телефон</label>
+                      <input class="account__data__input" type="text" id="phone"/>
+                    </div>
+                    <div class="account__data__input-wrapper"> 
+                      <label class="account__data__label" for="birthday">Дата рождения</label>
+                      <input class="account__data__input" type="text" id="birthday"/>
+                    </div>
+                    <div class="account__data__input-wrapper"> 
+                      <label class="account__data__label" for="sex">Пол</label>
+                      <select class="account__data__input account__data__select" name="select" id="sex">
+                        <option value="value1">Значение 1</option>
+                        <option value="value2" selected="">Значение 2</option>
+                        <option value="value3">Значение 3</option>
+                      </select>
+                    </div>
+                    <div class="account__data-btn button-blue">Сохранить изменения</div>
+                  </form>
+                </div>
+                <div class="account-item account__bonuses tab-text" id="tab-bonuses"> 
+                  <div class="account__bonuses__top"> 
+                    <div class="account__bonuses__title account__title">Бонусная программа</div>
+                    <div class="account__bonuses__info"> <span class="decor">i</span>
+                      <div class="account__bonuses__info-text regular">Бонусами можно оплатить до 20% стоимости  товаров или начислить бонусы на карту в размере от 3 до 15% от стоимости покупки.</div>
+                    </div>
+                  </div>
+                  <div class="account__bonuses__stats"> 
+                    <div class="account__bonuses__stats-circle"> 
+                      <svg class="circular-chart" viewBox="0 0 36 36">
+                        <path class="circle-bg" d="M18 2.0845                                    a 15.9155 15.9155 0 0 1 0 31.831                                    a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845                                    a 15.9155 15.9155 0 0 1 0 31.831                                    a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                      </svg>
+                    </div>
+                    <div class="account__bonuses__stats-text"> 
+                      <div class="account__bonuses__stats-number">350</div>
+                      <div class="account__bonuses__stats-desc">бонусов накоплено</div>
+                      <div class="account__bonuses__stats-bottom gray">до получения скидки осталось 150</div>
+                    </div>
+                    <div class="decor"></div>
+                  </div>
+                  <div class="account__bonuses__info account__bonuses__info-mobile"> <span class="decor">i</span>
+                    <div class="account__bonuses__info-text regular">Бонусами можно оплатить до 20% стоимости  товаров или начислить бонусы на карту в размере от 3 до 15% от стоимости покупки.</div>
+                  </div>
+                  <div class="account__bonuses__desc"> <span class="regular">Магазин Shishka предлагает Вам уникальную партнерскую программу, основанную на бонусной системе!</span><span> За заказы Вам начисляется некоторое количество бонусов. Полученные бонусы доступны к использованию сразу после активации.</span></div>
+                </div>
+                <div class="account-item account__history tab-text" id="tab-history">
+                  <div class="account__history__title account__title">История заказов</div>
+                  <div class="account__history__steps">
+                    <div class="account__history__step"> 
+                      <div class="account__history__step-number">3</div>
+                      <div class="account__history__step-text regular">Заказов всего</div>
+                    </div>
+                    <div class="account__history__step"> 
+                      <div class="account__history__step-number">1</div>
+                      <div class="account__history__step-text regular">Активных заказов</div>
+                    </div>
+                    <div class="account__history__step"> 
+                      <div class="account__history__step-number">2</div>
+                      <div class="account__history__step-text regular">Выполненных заказов</div>
+                    </div>
+                  </div>
+                  <div class="account__history__items"> 
+                    <div class="account__history__items-top">
+                      <div class="account__history__item"> 
+                        <div class="account__history__item-number">№ </div>
+                        <div class="account__history__item-info">Товар</div>
+                        <div class="account__history__item-status">Статус</div>
+                        <div class="account__history__item-summ">Сумма</div>
+                      </div>
+                    </div>
+                    <div class="account__history__items-bottom">
+                      <div class="account__history__item">
+                        <div class="account__history__item-number">11253</div>
+                        <div class="account__history__item-info"> 
+                          <div class="account__history__item-img"> <img src="img/products/product-img2.png" alt=""/>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M18.425 0.485565C22.6625 0.485565 25.5 3.45932 25.5 7.88432V18.0968C25.5 22.5106 22.6625 25.4856 18.425 25.4856H7.5875C3.35 25.4856 0.5 22.5106 0.5 18.0968V7.88432C0.5 3.45932 3.35 0.485565 7.5875 0.485565H18.425ZM12.5625 6.63432C12.05 6.63432 11.625 7.06057 11.625 7.57182V13.8856C11.625 14.2106 11.8 14.5231 12.0875 14.6856L16.9875 17.6106C17.1375 17.7106 17.3125 17.7481 17.475 17.7481C17.7875 17.7481 18.1 17.5856 18.275 17.2856C18.55 16.8468 18.4 16.2718 17.95 15.9981L13.5 13.3481V7.57182C13.5 7.06057 13.0875 6.63432 12.5625 6.63432Z" fill="#C0C0C0"></path>
+                            </svg>
+                          </div>
+                          <div class="account__history__item-text">Чай кедровый, 250 гр.</div>
+                        </div>
+                        <div class="account__history__item-status"> 
+                          <div class="account__history__item-status-img"> 
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M18.425 0.485565C22.6625 0.485565 25.5 3.45932 25.5 7.88432V18.0968C25.5 22.5106 22.6625 25.4856 18.425 25.4856H7.5875C3.35 25.4856 0.5 22.5106 0.5 18.0968V7.88432C0.5 3.45932 3.35 0.485565 7.5875 0.485565H18.425ZM12.5625 6.63432C12.05 6.63432 11.625 7.06057 11.625 7.57182V13.8856C11.625 14.2106 11.8 14.5231 12.0875 14.6856L16.9875 17.6106C17.1375 17.7106 17.3125 17.7481 17.475 17.7481C17.7875 17.7481 18.1 17.5856 18.275 17.2856C18.55 16.8468 18.4 16.2718 17.95 15.9981L13.5 13.3481V7.57182C13.5 7.06057 13.0875 6.63432 12.5625 6.63432Z" fill="#C0C0C0"></path>
+                            </svg>
+                          </div>
+                          <div class="account__history__item-status-text">
+                            <p>оплачен 22/01/2023</p>
+                          </div>
+                        </div>
+                        <div class="account__history__item-summ">6800 руб.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="account-item account__orders tab-text _active" id="tab-orders"> 
+                  <div class="account__orders__title account__title">Активные заказы</div>
+                  <div class="account__orders__items" data-spollers="" data-one-spoller="">
+                    <div class="account__orders__item spoller-block">
+                      <button class="account__orders__item-title" tabindex="-1" type="button" data-spoller="">
+                        <div class="account__orders__item-img"> <img src="img/icons/leaves.svg" alt=""/></div>
+                        <div class="account__orders__item-number">
+                          <div class="account__orders__item-number-title">Заказ №1253</div>
+                          <div class="account__orders__item-number-date">25/01/2023 в 12:22</div>
+                        </div>
+                        <div class="account__orders__item-status">
+                          <div class="account__orders__item-status-title">Статус</div>
+                          <div class="account__orders__item-status-wrapper"> 
+                            <div class="account__orders__item-status-bar"> </div>
+                            <div class="account__orders__item-status-number">60%</div>
+                          </div>
+                        </div>
+                        <div class="account__orders__item-text">
+                          <div class="account__orders__item-waiting">Ожидаемое выполнение</div>
+                          <div class="account__orders__item-waiting-date">29/01/2023</div>
+                        </div>
+                      </button>
+                      <div class="account__orders__item-content"> 
+                        <ul class="account__orders__item__puncts"> 
+                          <li class="account__orders__item__punct _active"><span>Оформлен</span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct _active"><span>Обработан</span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct _active"><span>Упакован</span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct _active"><span>Отправлен </span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct"><span>Поступил к курьеру</span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct"><span>Доставлен</span>
+                            <div class="decor">   </div>
+                          </li>
+                        </ul>
+                        <button class="account__orders__item__close-btn gray spoller-close-btn"><img src="img/icons/arrow-right.svg" alt=""/><span>Свернуть</span></button>
+                      </div>
+                    </div>
+                    <div class="account__orders__item spoller-block">
+                      <button class="account__orders__item-title" tabindex="-1" type="button" data-spoller="">
+                        <div class="account__orders__item-img"> <img src="img/icons/leaves.svg" alt=""/></div>
+                        <div class="account__orders__item-number">
+                          <div class="account__orders__item-number-title">Заказ №1253</div>
+                          <div class="account__orders__item-number-date">25/01/2023 в 12:22</div>
+                        </div>
+                        <div class="account__orders__item-status">
+                          <div class="account__orders__item-status-title">Статус</div>
+                          <div class="account__orders__item-status-wrapper"> 
+                            <div class="account__orders__item-status-bar"> </div>
+                            <div class="account__orders__item-status-number">60%</div>
+                          </div>
+                        </div>
+                        <div class="account__orders__item-text">
+                          <div class="account__orders__item-waiting">Ожидаемое выполнение</div>
+                          <div class="account__orders__item-waiting-date">29/01/2023</div>
+                        </div>
+                      </button>
+                      <div class="account__orders__item-content"> 
+                        <ul class="account__orders__item__puncts"> 
+                          <li class="account__orders__item__punct _active"><span>Оформлен</span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct _active"><span>Обработан</span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct _active"><span>Упакован</span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct _active"><span>Отправлен </span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct"><span>Поступил к курьеру</span>
+                            <div class="decor">   </div>
+                          </li>
+                          <li class="account__orders__item__punct"><span>Доставлен</span>
+                            <div class="decor">   </div>
+                          </li>
+                        </ul>
+                        <button class="account__orders__item__close-btn gray spoller-close-btn"><img src="img/icons/arrow-right.svg" alt=""/><span>Свернуть</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background-image-images">
+            <div class="background-image-lines"><img src="img/icons/bg-lines3.svg" alt=""/></div>
+            <div class="background-image-lines"><img src="img/icons/bg-lines3.svg" alt=""/></div>
+            <div class="background-image-leaves one"><img src="img/bg/bg-leaves.png" alt=""/></div>
+            <div class="background-image-leaves two"><img src="img/bg/bg-leaves.png" alt=""/></div>
+          </div>
+        </section>
+      </main>
+      <section class="sales">
+        <div class="sales__container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-2 sales__text">Узнавайте о скидках <span class="font-weight-bold">первыми!</span></div>
+            <form class="col-lg-10 sales__form" action="URL">
+              <div class="sales__inputs">
+                <input class="input-text" id="sales-name" type="text" placeholder="Ваше имя"/>
+                <input class="input-text" id="sales-email" type="text" placeholder="Введите e-mail*"/>
+                <div class="sales__checkbox checkbox-custom">
+                  <input id="sales-checkbox" type="checkbox"/>
+                  <label class="decor" for="sales-checkbox"></label>
+                  <label for="sales-checkbox">Соглашаюсь с условиями обработки персональных данных</label>
+                </div>
+                <div class="sales__button-mobile"><img src="img/icons/arrow-right.svg" alt=""/></div>
+              </div>
+              <div class="sales__button-wrapper">
+                <button class="sales__button button-white">Подписаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__top">
+            <div class="row g-2">
+              <div class="footer__contacts col-lg-4">
+                <div class="footer__contacts__header">
+                  <div class="footer__contacts__text footer__title">Поддержка клиентов</div><a class="footer__contacts__number" href="#"><img src="img/icons/phone.svg" alt=""/>							+7 (495) 822 10 03</a>
+                  <div class="footer__contacts__time">С 9:00 до 18:00 (по Москве)</div>
+                </div>
+                <div class="footer__contacts__bottom">
+                  <div class="footer__contacts__bottom-text"><span class="footer__title">Заказы в интернет-магазине</span> принимаются 24/7</div>
+                </div>
+              </div>
+              <div class="footer__info col-lg-3">
+                <div class="footer__title">Присоединяйтесь:</div>
+                <div class="footer__info__socials"><a class="footer__info__social" href="#"><img src="img/icons/vk.svg" alt=""/></a><a class="footer__info__social" href="#"><img src="img/icons/whatsapp.svg" alt=""/></a></div>
+                <div class="footer__info__payment">
+                  <div class="footer__title">Принимаем к оплате:</div>
+                  <div class="footer__info__payment__img"><img src="img/icons/cringe.png" alt=""/></div>
+                </div>
+              </div>
+              <ul class="footer__links col-lg-3">
+                <div class="footer__title footer__links__title">Shishka</div>
+                <li class="footer__link"><a class="hover-effect" href="#">Каталог продуктов</a></li>
+                <li class="footer__link"><a class="hover-effect" href="#">Новости</a></li>
+                <li class="footer__link"><a class="hover-effect" href="#">О компании</a></li>
+              </ul>
+              <div class="footer__logo col-lg-2"><img src="img/icons/logo-big.svg" alt=""/></div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom__text">Интернет-магазин Shishka. Официальный дистрибьютор в России.</div>
+            <ul class="footer__bottom__links">
+              <li class="footer__bottom__link"> <a class="hover-effect" href="#"> Договор оферты</a></li>
+              <li class="footer__bottom__link"> <a class="hover-effect" href="#"> Политика конфиденциальности</a></li>
+            </ul>
+            <div class="footer__bottom__text">ООО «SHISHKA» © 2023г.</div>
+          </div>
+        </div>
+      </footer>
+    </div><!-- <div id="popup" aria-hidden="true" class="popup">
+<div class="popup__wrapper">
+<div class="popup__content">
+<button data-close type="button" class="popup__close">Закрыть</button>
+<div class="popup__text">
+    <Text></Text></div>
+</div>
+</div>
+</div> -->
+    <script src="js/swiper.js?_v=20230211004738"></script>
+    <script src="js/tabs.js?_v=20230211004738"></script>
+    <script src="js/spollers.js?_v=20230211004738"></script>
+    <script src="js/app.js?_v=20230211004738"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20230211004738"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20230211004738"></script>
+    <script src="js/price-range.js?_v=20230211004738"></script>
+  </body>
+</html>

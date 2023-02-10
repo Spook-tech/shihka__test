@@ -1,14 +1,34 @@
-document.body.addEventListener('click', function(e){
-   console.log(e.target);
-})
+document.body.addEventListener('click', (e) => {
+  // Get the target element of the click event
+  const target = e.target;
+
+  // If the target element is the 'cart-tech-button'
+  if (target.id === 'cart-tech-button') {
+    // Toggle the 'empty' class on the '.cart' element
+    document.querySelector('.cart').classList.toggle('empty');
+  } 
+
+  // If the target element has the class 'catalog__products-hide-filter'
+  else if (target.classList.contains('catalog__products-hide-filter')){
+    // Get the filters element
+    const filters = document.querySelector('.catalog');
+    // Toggle the 'hide-filters' class on the filters element
+    filters.classList.toggle('hide-filters');
+  }
+});
+
+// Get the screen width of the device
 const screenSize = window.screen.width;
 
+// Initialize a new Swiper object for the '.blog__swiper' element
 const blogSwiper = new Swiper('.blog__swiper', {
+    // Set the navigation options for the Swiper
    navigation: {
      nextEl: '.blog-button-next',
      prevEl: '.blog-button-prev',
    },
  
+  // Set the breakpoint options for the Swiper
    breakpoints: {
       320: {
         slidesPerView: 1,
@@ -18,13 +38,58 @@ const blogSwiper = new Swiper('.blog__swiper', {
         slidesPerView: 2,
         spaceBetween: 30
       },
-      640: {
+      769: {
         slidesPerView: 3,
         spaceBetween: 40
       }
     }
 });
+// Initialize a new Swiper object for the '.product-swiper' element
+const productSwiper = new Swiper('.product-swiper', {
+  // Set the navigation options for the Swiper
+  navigation: {
+    nextEl: '.product-button-next',
+    prevEl: '.product-button-prev',
+  },
 
+    // Set the breakpoint options for the Swiper
+   breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 37
+      }
+    }
+});
+
+// Initialize a new Swiper object for the '.products-items-3' element
+const product3Swiper = new Swiper('.products-items-3', {
+
+    // Set the breakpoint options for the Swiper
+   breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 37
+      }
+    }
+});
+
+
+// Initialize a new Swiper object for the '.starter-slider-swiper' element
 const starterSwiper = new Swiper('.starter-slider-swiper', {
   spaceBetween: 10,
   effect: 'cube',
@@ -40,7 +105,19 @@ const starterSwiper = new Swiper('.starter-slider-swiper', {
 
   slidesPerView: 1,
 });
-
+const productsSwiper = new Swiper('.products-items', {
+ 
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 80
+    },
+  },
+});
 if (screenSize > 640){
    const productsSwiper = new Swiper('.products-swiper', {
       slidesPerView: 3,
@@ -71,3 +148,5 @@ if (screenSize > 640){
        }
    });
 }
+
+console.log('________$$$$\n _______$$__$\n _______$___$$\n _______$___$$\n _______$$___$$\n ________$____$$\n ________$$____$$$\n _________$$_____$$\n _________$$______$$\n __________$_______$$\n ____$$$$$$$________$$\n __$$$_______________$$$$$$\n _$$____$$$$____________$$$               Хорошего дня\n _$___$$$__$$$____________$$\n _$$________$$$____________$\n __$$____$$$$$$____________$\n __$$$$$$$____$$___________$\n __$$_______$$$$___________$\n ___$$$$$$$$$__$$_________$$\n ____$________$$$$_____$$$$\n ____$$____$$$$$$____$$$$$$\n _____$$$$$$____$$__$$\n _______$_____$$$_$$$\n ________$$$$$$$$$$');

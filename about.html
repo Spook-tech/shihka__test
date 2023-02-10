@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Заголовок</title>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- <style>body{opacity: 0;}</style>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20230211004738"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230211004738"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230211004738"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!-- <meta name="robots" content="noindex, nofollow">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Source+Serif+Pro:wght@300;400;600;700&amp;display=swap&_v=20230211004738" rel="stylesheet"/>
+  </head>
+  <body> 
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="header__container"><a class="header__logo" href="index.html"><img src="img/logo.svg" alt=""/></a>
+            <form class="header__search">
+              <button class="header__search__button"><img src="img/icons/search.svg" alt=""/></button>
+              <input class="header__input" id="header-search" type="text" required=""/>
+              <label class="fake-placeholder" for="header-search">Поиск продуктов</label>
+            </form>
+            <div class="header__city">
+              <div class="header__city__icon"><img src="img/icons/geo-tag.svg" alt=""/></div><a class="header__city__link" href="#">Москва</a>
+            </div>
+            <div class="header__phone">
+              <div class="header__phone__icon"><img src="img/icons/phone.svg" alt=""/></div>
+              <div class="header__phone__number"><a href="tel:+00000000">+7 (495) 822 10 03</a></div>
+            </div>
+            <div class="header__actions">
+              <button class="header__cart"><img src="img/icons/cart.svg" alt=""/></button>
+              <button class="header__favourites"><img src="img/icons/heart.svg" alt=""/></button>
+              <button class="header__account"><img src="img/icons/profile.svg" alt=""/></button>
+            </div>
+            <button class="header__burger"><span></span></button>
+          </div>
+        </div>
+        <div class="header__middle">
+          <div class="header__container">
+            <div class="header__search-mobile">
+              <button class="header__search-mobile__button"><img src="img/icons/search.svg" alt=""/></button>
+              <input type="text" placeholder="Поиск продуктов"/>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__container">
+            <ul class="header__links row justify-content-center">
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">Чай</a></li>
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">Книги</a></li>
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">Nutrifika</a></li>
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">Новости</a></li>
+              <li class="header__link col-3 col-sm"><a class="hover-effect" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main> 
+        <section class="text">
+          <div class="text__container"> 
+            <div class="text__content">
+              <h2 class="text__title"> <span class="beautiful-font">S</span><span>hishka - здоровье для всей семьи!</span></h2>
+              <div class="text__text">
+                <p> <span class="regular">Крепкий характер кедрового чая с густым хвойным ароматом восстановит физические силы и вернет бодрость всей семье.</span><span> Этот напиток также является замечательным средством для профилактики авитаминоза, воспалительных и простудных заболеваний. Кедр – это великолепное средство для лечения и профилактики болезней дыхательных путей, оказывает укрепляющее воздействие на организм, повышает сопротивляемость к заболеваниям и стрессам. Он обладает дезинфицирующим и противовоспалительным действием.</span></p>
+              </div>
+            </div><a class="text__button button-blue" href="catalog.html">В каталог</a>
+          </div>
+        </section>
+        <section class="why-us"> 
+          <div class="why-us__container">
+            <h2 class="why-us__title"> <span>Почему </span><span class="beautiful-font">S</span><span>hishka?</span></h2>
+            <div class="why-us__block">
+              <div class="why-us__items">
+                <div class="why-us__item">
+                  <div class="why-us__item-img"> <img src="img/icons/peoples.svg" alt=""/></div>
+                  <div class="why-us__item-text regular">Здоровый напиток для всей семьи.</div>
+                </div>
+                <div class="why-us__item">
+                  <div class="why-us__item-img"> <img src="img/icons/check-border.svg" alt=""/></div>
+                  <div class="why-us__item-text regular">Вкусная, необычная и полезная альтернатива обычному чаю.</div>
+                </div>
+                <div class="why-us__item">
+                  <div class="why-us__item-img"> <img src="img/icons/product-tag-icon.svg" alt=""/></div>
+                  <div class="why-us__item-text regular">Сырьё высшего качества прямиком из тайги.</div>
+                </div>
+                <div class="why-us__item">
+                  <div class="why-us__item-img"> <img src="img/icons/star-bold.svg" alt=""/></div>
+                  <div class="why-us__item-text regular">Настоящий природный суперфуд, богатый витаминами и  микроэлементами.</div>
+                </div>
+              </div>
+              <div class="why-us__img"> <img src="img/about/about-img.png" alt=""/></div>
+            </div>
+          </div>
+        </section>
+        <section class="products products-mission">
+          <div class="products__container">
+            <div class="products__filters">
+              <div class="products__filters__title">Возможно, Вам понравится</div><a class="products__filters__to-catalog hover-effect" href="#">Смотреть всё<img src="img/icons/arrow-right.svg" alt=""/></a>
+            </div>
+            <div class="products-items-3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="products-item">
+                    <div class="products-item__top">
+                      <div class="products-item__img"><img src="img/products/product-img2.png" alt=""/></div>
+                      <div class="products-item__buttons">
+                        <div class="products-item__like">
+                          <svg stroke="#C0C0C0" stroke-width="" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="28" height="27" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g>
+                              <path fill="transparent" d="M11.466 22.776a.746.746 0 0 0 1.068 0l9.594-9.721C26.129 9.002 23.286 2 17.596 2 14.179 2 12.611 4.511 12 4.98 11.386 4.509 9.828 2 6.404 2 .732 2-2.146 8.984 1.873 13.055z" data-original="#f44336"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <button class="products-item__cart"><img src="img/icons/cart-white.svg" alt=""/></button>
+                      </div>
+                    </div>
+                    <div class="products-item__bottom" data-swiper-parallax="-20px">
+                      <div class="products-item__text">
+                        <div class="products-item__name">Чай Кедровый</div>
+                        <div class="products-item__desc">Краткое описание товара в 1-2 строки</div>
+                        <div class="products-item__info">
+                          <div class="products-item__price">3 000 руб</div>
+                          <div class="products-item__rating justify-content-end">
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="products-item">
+                    <div class="products-item__top">
+                      <div class="products-item__img"><img src="img/products/product-img2.png" alt=""/></div>
+                      <div class="products-item__buttons">
+                        <div class="products-item__like">
+                          <svg stroke="#C0C0C0" stroke-width="" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="28" height="27" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g>
+                              <path fill="transparent" d="M11.466 22.776a.746.746 0 0 0 1.068 0l9.594-9.721C26.129 9.002 23.286 2 17.596 2 14.179 2 12.611 4.511 12 4.98 11.386 4.509 9.828 2 6.404 2 .732 2-2.146 8.984 1.873 13.055z" data-original="#f44336"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <button class="products-item__cart"><img src="img/icons/cart-white.svg" alt=""/></button>
+                      </div>
+                    </div>
+                    <div class="products-item__bottom" data-swiper-parallax="-20px">
+                      <div class="products-item__text">
+                        <div class="products-item__name">Чай Кедровый</div>
+                        <div class="products-item__desc">Краткое описание товара в 1-2 строки</div>
+                        <div class="products-item__info">
+                          <div class="products-item__price">3 000 руб</div>
+                          <div class="products-item__rating justify-content-end">
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="products-item">
+                    <div class="products-item__top">
+                      <div class="products-item__img"><img src="img/products/product-img2.png" alt=""/></div>
+                      <div class="products-item__buttons">
+                        <div class="products-item__like">
+                          <svg stroke="#C0C0C0" stroke-width="" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="28" height="27" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g>
+                              <path fill="transparent" d="M11.466 22.776a.746.746 0 0 0 1.068 0l9.594-9.721C26.129 9.002 23.286 2 17.596 2 14.179 2 12.611 4.511 12 4.98 11.386 4.509 9.828 2 6.404 2 .732 2-2.146 8.984 1.873 13.055z" data-original="#f44336"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <button class="products-item__cart"><img src="img/icons/cart-white.svg" alt=""/></button>
+                      </div>
+                    </div>
+                    <div class="products-item__bottom" data-swiper-parallax="-20px">
+                      <div class="products-item__text">
+                        <div class="products-item__name">Чай Кедровый</div>
+                        <div class="products-item__desc">Краткое описание товара в 1-2 строки</div>
+                        <div class="products-item__info">
+                          <div class="products-item__price">3 000 руб</div>
+                          <div class="products-item__rating justify-content-end">
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="products-item">
+                    <div class="products-item__top">
+                      <div class="products-item__img"><img src="img/products/product-img2.png" alt=""/></div>
+                      <div class="products-item__buttons">
+                        <div class="products-item__like">
+                          <svg stroke="#C0C0C0" stroke-width="" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="28" height="27" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g>
+                              <path fill="transparent" d="M11.466 22.776a.746.746 0 0 0 1.068 0l9.594-9.721C26.129 9.002 23.286 2 17.596 2 14.179 2 12.611 4.511 12 4.98 11.386 4.509 9.828 2 6.404 2 .732 2-2.146 8.984 1.873 13.055z" data-original="#f44336"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <button class="products-item__cart"><img src="img/icons/cart-white.svg" alt=""/></button>
+                      </div>
+                    </div>
+                    <div class="products-item__bottom" data-swiper-parallax="-20px">
+                      <div class="products-item__text">
+                        <div class="products-item__name">Чай Кедровый</div>
+                        <div class="products-item__desc">Краткое описание товара в 1-2 строки</div>
+                        <div class="products-item__info">
+                          <div class="products-item__price">3 000 руб</div>
+                          <div class="products-item__rating justify-content-end">
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                            <div class="products-item__star col-1"><img src="img/icons/star-fill.svg" alt=""/></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <section class="sales">
+        <div class="sales__container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-2 sales__text">Узнавайте о скидках <span class="font-weight-bold">первыми!</span></div>
+            <form class="col-lg-10 sales__form" action="URL">
+              <div class="sales__inputs">
+                <input class="input-text" id="sales-name" type="text" placeholder="Ваше имя"/>
+                <input class="input-text" id="sales-email" type="text" placeholder="Введите e-mail*"/>
+                <div class="sales__checkbox checkbox-custom">
+                  <input id="sales-checkbox" type="checkbox"/>
+                  <label class="decor" for="sales-checkbox"></label>
+                  <label for="sales-checkbox">Соглашаюсь с условиями обработки персональных данных</label>
+                </div>
+                <div class="sales__button-mobile"><img src="img/icons/arrow-right.svg" alt=""/></div>
+              </div>
+              <div class="sales__button-wrapper">
+                <button class="sales__button button-white">Подписаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__top">
+            <div class="row g-2">
+              <div class="footer__contacts col-lg-4">
+                <div class="footer__contacts__header">
+                  <div class="footer__contacts__text footer__title">Поддержка клиентов</div><a class="footer__contacts__number" href="#"><img src="img/icons/phone.svg" alt=""/>							+7 (495) 822 10 03</a>
+                  <div class="footer__contacts__time">С 9:00 до 18:00 (по Москве)</div>
+                </div>
+                <div class="footer__contacts__bottom">
+                  <div class="footer__contacts__bottom-text"><span class="footer__title">Заказы в интернет-магазине</span> принимаются 24/7</div>
+                </div>
+              </div>
+              <div class="footer__info col-lg-3">
+                <div class="footer__title">Присоединяйтесь:</div>
+                <div class="footer__info__socials"><a class="footer__info__social" href="#"><img src="img/icons/vk.svg" alt=""/></a><a class="footer__info__social" href="#"><img src="img/icons/whatsapp.svg" alt=""/></a></div>
+                <div class="footer__info__payment">
+                  <div class="footer__title">Принимаем к оплате:</div>
+                  <div class="footer__info__payment__img"><img src="img/icons/cringe.png" alt=""/></div>
+                </div>
+              </div>
+              <ul class="footer__links col-lg-3">
+                <div class="footer__title footer__links__title">Shishka</div>
+                <li class="footer__link"><a class="hover-effect" href="#">Каталог продуктов</a></li>
+                <li class="footer__link"><a class="hover-effect" href="#">Новости</a></li>
+                <li class="footer__link"><a class="hover-effect" href="#">О компании</a></li>
+              </ul>
+              <div class="footer__logo col-lg-2"><img src="img/icons/logo-big.svg" alt=""/></div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom__text">Интернет-магазин Shishka. Официальный дистрибьютор в России.</div>
+            <ul class="footer__bottom__links">
+              <li class="footer__bottom__link"> <a class="hover-effect" href="#"> Договор оферты</a></li>
+              <li class="footer__bottom__link"> <a class="hover-effect" href="#"> Политика конфиденциальности</a></li>
+            </ul>
+            <div class="footer__bottom__text">ООО «SHISHKA» © 2023г.</div>
+          </div>
+        </div>
+      </footer>
+    </div><!-- <div id="popup" aria-hidden="true" class="popup">
+<div class="popup__wrapper">
+<div class="popup__content">
+<button data-close type="button" class="popup__close">Закрыть</button>
+<div class="popup__text">
+    <Text></Text></div>
+</div>
+</div>
+</div> -->
+    <script src="js/swiper.js?_v=20230211004738"></script>
+    <script src="js/tabs.js?_v=20230211004738"></script>
+    <script src="js/spollers.js?_v=20230211004738"></script>
+    <script src="js/app.js?_v=20230211004738"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20230211004738"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20230211004738"></script>
+    <script src="js/price-range.js?_v=20230211004738"></script>
+  </body>
+</html>
