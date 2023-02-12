@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Source+Serif+Pro:wght@300;400;600;700&amp;display=swap&_v=20230213000538" rel="stylesheet"/>
   </head>
   <body> 
-    <div class="wrapper not-found-page">
+    <div class="wrapper">
       <header class="header">
         <div class="header__top">
           <div class="header__container"><a class="header__logo" href="index.html"><img src="img/logo.svg" alt=""/></a>
@@ -59,7 +59,7 @@
           </div>
         </div>
       </header>
-      <main>
+      <main class="article-page"> 
         <div class="breadcrumbs">
           <div class="breadcrumbs__container">
             <ul class="breadcrumbs__list">
@@ -67,24 +67,136 @@
             </ul>
           </div>
         </div>
-        <section class="not-found">
-          <div class="not-found__container"> 
-            <div class="not-found__title"><span class="beautiful-font">404</span><img src="img/bg/bg-shishka2.png" alt=""/></div>
-            <div class="not-found__subtitle">Похоже, мы не можем найти нужную Вам страницу...</div>
-            <div class="not-found__links">
-              <div class="not-found__links-text">Вот несколько полезных ссылок:</div>
-              <ul class="not-found__links-list"> 
-                <li><a class="not-found__links-link" href="blog.html">Новости</a></li>
-                <li><a class="not-found__links-link" href="about.html">О Компании</a></li>
-                <li><a class="not-found__links-link" href="catalog.html">Каталог</a></li>
-              </ul>
+        <div class="background-image-images">
+          <div class="background-image-lines"><img src="img/icons/bg-lines.svg" alt=""/></div>
+          <div class="background-image-lines"><img src="img/icons/bg-lines3.svg" alt=""/></div>
+          <div class="background-image-leaves one"><img src="img/bg/bg-leaves.png" alt=""/></div>
+          <div class="background-image-leaves two"><img src="img/bg/bg-leaves.png" alt=""/></div>
+        </div>
+        <article class="article">
+          <div class="article__container">
+            <div class="article__wrapper"> 
+              <div class="article__top">
+                <div class="article__img"> <img src="img/bg/bg-green.png" alt=""/></div>
+                <div class="article__top__tags"><a class="blog-item__tag article-tag" href="#">#польза                           </a></div>
+                <div class="article__top__text"> 
+                  <div class="article__title">
+                    <h1>Кедровый чай Shishka</h1>
+                  </div>
+                  <div class="article__subtitle"> 
+                    <p>Кедр – одно из главных богатств Сибири. Символ силы и долголетия.</p>
+                  </div>
+                </div>
+                <button class="article__top__button">
+                  <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.7053 0.913329C22.3268 0.534838 21.7346 0.50043 21.3172 0.810104L21.1976 0.913329L12.0012 10.1093L2.8047 0.913328C2.42621 0.534837 1.83393 0.500429 1.41657 0.810103L1.297 0.913328C0.918512 1.29182 0.884104 1.88409 1.19378 2.30146L1.297 2.42103L11.2473 12.3713C11.6258 12.7498 12.2181 12.7842 12.6354 12.4746L12.755 12.3713L22.7053 2.42103C23.1217 2.00469 23.1217 1.32967 22.7053 0.913329Z" fill="white"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="article__content"> 
+                <div class="article__actions"> 
+                  <div class="article__buttons"> 
+                    <button class="article__button">
+                      <div class="article__button-img"> <img src="img/icons/chat.svg" alt=""/></div>
+                      <div class="article__button-text gray hover-effect">комментировать</div>
+                    </button>
+                    <button class="article__button">
+                      <div class="article__button-img"> <img src="img/icons/heart.svg" alt=""/></div>
+                      <div class="article__button-text gray hover-effect">нравится</div>
+                    </button>
+                  </div>
+                  <div class="article__info"> 
+                    <div class="article__info__item article__info__item-comments">
+                      <div class="article__info__item-img"><img src="img/icons/chat.svg" alt=""/></div>
+                      <div class="article__info__item-text gray">64</div>
+                    </div>
+                    <div class="article__info__item article__info__item-like">
+                      <div class="article__info__item-img"><img src="img/icons/heart.svg" alt=""/></div>
+                      <div class="article__info__item-text gray">87</div>
+                    </div>
+                    <div class="article__info__item article__info__item-date">
+                      <div class="article__info__item-img"><img src="img/icons/calendar.svg" alt=""/></div>
+                      <div class="article__info__item-text gray">11/11/2021 15:30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="article__text"> 
+                  <p>Кедровый чай – настоящий таежный напиток долголетия. В нем соединились необычный терпкий вкус, насыщенный хвойный аромат и безусловная польза для здоровья. Аромат смолы мягко воздействует на нервную систему, снимает стресс и помогает сконцентрироваться.</p><br/>
+                  <ul class="article__list">
+                    <li>способствует укреплению иммунитета;</li>
+                    <li>обладает бактерицидным и противовоспалительным действием;</li>
+                    <li>очищает организм от токсинов;</li>
+                    <li>улучшает кровообращение.</li>
+                  </ul><br/>
+                  <p>Кедр – одно из главных богатств Сибири. Символ силы и долголетия. Целебными свойствами обладают и кедровая смола, и шишки, и орехи, и хвоя, и даже древесина. Аромат смолы мягко воздействует на нервную систему, снимает стресс и помогает сконцентрироваться.</p><br/>
+                  <ul class="article__list-number">
+                    <li>способствует укреплению иммунитета;</li>
+                    <li>обладает бактерицидным и противовоспалительным действием;</li>
+                    <li>очищает организм от токсинов;</li>
+                    <li>улучшает кровообращение.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <section class="blog article-blog">
+          <div class="blog__container">
+            <div class="blog__top">
+              <div class="blog__subtitle subtitle">Другие статьи</div><a class="products__filters__to-catalog hover-effect" href="blog.html">Смотреть всё<img src="img/icons/arrow-right.svg" alt=""/></a>
+            </div>
+            <div class="blog__swiper-wrapper">
+              <div class="blog__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="blog-item">
+                      <div class="blog-item__img"><img src="img/blog/blog-img1.png" alt=""/></div>
+                      <div class="blog-item__text">
+                        <div class="blog-item__title"><a class="blog-item__name" href="#"> <span class="hover-effect">Польза кедра</span></a>
+                          <div class="blog-item__date">04/01/2023</div>
+                        </div>
+                        <div class="blog-item__desc">Кедр – одно из главных богатств Сибири.</div><a class="blog-item__link" href="#">Далее <img src="img/icons/arrow-right.svg" alt=""/></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-item">
+                      <div class="blog-item__img"><img src="img/blog/blog-img1.png" alt=""/></div>
+                      <div class="blog-item__text">
+                        <div class="blog-item__title"><a class="blog-item__name" href="#"> <span class="hover-effect">Польза кедра</span></a>
+                          <div class="blog-item__date">04/01/2023</div>
+                        </div>
+                        <div class="blog-item__desc">Кедр – одно из главных богатств Сибири.</div><a class="blog-item__link" href="#">Далее <img src="img/icons/arrow-right.svg" alt=""/></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-item">
+                      <div class="blog-item__img"><img src="img/blog/blog-img2.png" alt=""/></div>
+                      <div class="blog-item__text">
+                        <div class="blog-item__title"><a class="blog-item__name" href="#"> <span class="hover-effect">Польза кедра</span></a>
+                          <div class="blog-item__date">04/01/2023</div>
+                        </div>
+                        <div class="blog-item__desc">Кедр – одно из главных богатств Сибири.</div><a class="blog-item__link" href="#">Далее <img src="img/icons/arrow-right.svg" alt=""/></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-item">
+                      <div class="blog-item__img"><img src="img/blog/blog-img3.png" alt=""/></div>
+                      <div class="blog-item__text">
+                        <div class="blog-item__title"><a class="blog-item__name" href="#"> <span class="hover-effect">Польза кедра</span></a>
+                          <div class="blog-item__date">04/01/2023</div>
+                        </div>
+                        <div class="blog-item__desc">Кедр – одно из главных богатств Сибири.</div><a class="blog-item__link" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <div class="background-images">
-          <div class="background-image-full"><img class="background-image" src="img/main-page/background2.png" alt=""/></div>
-          <div class="background-image-lines"><img class="background-image" src="img/icons/bg-lines2.svg" alt=""/></div>
-        </div>
       </main>
       <section class="sales">
         <div class="sales__container">

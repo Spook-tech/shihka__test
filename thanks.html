@@ -5,13 +5,14 @@
     <meta charset="UTF-8"/>
     <meta name="format-detection" content="telephone=no"/>
     <!-- <style>body{opacity: 0;}</style>-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20230211004738"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230211004738"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230211004738"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230213000538" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20230213000538"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230213000538" type="text/css"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230213000538" type="text/css"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <!-- <meta name="robots" content="noindex, nofollow">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Source+Serif+Pro:wght@300;400;600;700&amp;display=swap&_v=20230211004738" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Source+Serif+Pro:wght@300;400;600;700&amp;display=swap&_v=20230213000538" rel="stylesheet"/>
   </head>
   <body> 
     <div class="wrapper">
@@ -23,17 +24,17 @@
               <input class="header__input" id="header-search" type="text" required=""/>
               <label class="fake-placeholder" for="header-search">Поиск продуктов</label>
             </form>
-            <div class="header__city">
+            <div class="header__city hover-effect">
               <div class="header__city__icon"><img src="img/icons/geo-tag.svg" alt=""/></div><a class="header__city__link" href="#">Москва</a>
             </div>
-            <div class="header__phone">
+            <div class="header__phone hover-effect">
               <div class="header__phone__icon"><img src="img/icons/phone.svg" alt=""/></div>
               <div class="header__phone__number"><a href="tel:+00000000">+7 (495) 822 10 03</a></div>
             </div>
             <div class="header__actions">
-              <button class="header__cart"><img src="img/icons/cart.svg" alt=""/></button>
-              <button class="header__favourites"><img src="img/icons/heart.svg" alt=""/></button>
-              <button class="header__account"><img src="img/icons/profile.svg" alt=""/></button>
+              <button class="header__cart hover-effect popup-link" href="#popup-cart"><img src="img/icons/cart.svg" alt=""/></button>
+              <button class="header__favourites hover-effect"><img src="img/icons/heart.svg" alt=""/></button>
+              <button class="header__account hover-effect"><img src="img/icons/profile.svg" alt=""/></button>
             </div>
             <button class="header__burger"><span></span></button>
           </div>
@@ -59,69 +60,80 @@
         </div>
       </header>
       <main class="thanks-page"> 
-        <section class="thanks"></section>
-        <div class="thanks__container"> 
-          <div class="thanks__top">
-            <div class="thanks__top__img"> <img src="img/icons/check-white.svg" alt=""/></div>
-            <div class="thanks__title"> 
-              <h2> <span class="beautiful-font">C</span>пасибо за ваш заказ!</h2>
+        <div class="background-images">
+          <div class="background-image-leaves"><img src="img/bg/bg-leaves.png" alt=""/></div>
+          <div class="background-image-leaves"><img src="img/bg/bg-leaves.png" alt=""/></div>
+          <div class="background-image-leaves"><img src="img/bg/bg-leaves.png" alt=""/></div>
+          <div class="background-image-lines one"><img src="img/icons/bg-lines3.svg" alt=""/></div>
+          <div class="background-image-lines two"><img src="img/icons/bg-lines5.svg" alt=""/></div>
+          <section class="thanks"></section>
+          <div class="thanks__container"> 
+            <div class="thanks__top">
+              <div class="thanks__top__img"> <img src="img/icons/check-white.svg" alt=""/></div>
+              <div class="thanks__title"> 
+                <h2> <span class="beautiful-font">C</span>пасибо за ваш заказ!</h2>
+              </div>
             </div>
-          </div>
-          <div class="thanks__bottom row justify-content-between gx-0">
-            <div class="col-lg-6 thanks__info-block">
-              <div class="thanks__info-item"> 
-                <div class="thanks__info-img"><img src="img/icons/profile.svg " alt=""/></div>
-                <div class="thanks__info-text"> 
-                  <p>Ваш заказ будет обработан автоматически.</p>
-                  <p>В случае необходимости с Вами свяжется менеджер.</p>
-                </div>
-              </div>
-              <div class="thanks__info-item"> 
-                <div class="thanks__info-img"><img src="img/icons/car.svg " alt=""/></div>
-                <div class="thanks__info-text"> 
-                  <p class="regular">Информация о заказе:</p>
-                  <p>Покупка будет доставлена по адресу:</p>
-                  <p class="thanks__info-address">г. Москва, ул</p>
-                  <p class="thanks__info-phone">Телефон: +7 ххх ххх хххх</p>
-                </div>
-              </div>
-              <div class="thanks__info-item"> 
-                <div class="thanks__info-img"><img src="img/icons/chat.svg " alt=""/></div>
-                <div class="thanks__info-text"> 
-                  <p>Если у вас возникли вопросы относительно заказа или нашей работы, пожалуйста, свяжитесь с нами:</p>
-                  <div class="thanks__contacts"> 
-                    <div class="thanks__contact"><a href="tel:111111111"> <img src="img/icons/phone.svg" alt=""/><span>+7 (495) 822 10 03</span></a></div>
-                    <div class="thanks__contact"><a href="mailto:shishka@gmail.com"> <img src="img/icons/mail.svg" alt=""/><span>shishka@gmail.com</span></a></div>
+            <div class="thanks__bottom row justify-content-between gx-0">
+              <div class="col-lg-6 thanks__info-block">
+                <div class="thanks__info-item"> 
+                  <div class="thanks__info-img"><img src="img/icons/profile.svg " alt=""/></div>
+                  <div class="thanks__info-text"> 
+                    <p>Ваш заказ будет обработан автоматически.</p>
+                    <p>В случае необходимости с Вами свяжется менеджер.</p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-5 thanks__price-block">
-              <div class="thanks__price-block-wrapper"> 
-                <div class="decor"></div>
-                <div class="thanks__price-top"> 
-                  <div class="thanks__price__img"> <img src="img/products/product-img.png" alt=""/></div>
-                  <div class="thanks__price__text"> 
-                    <div class="thanks__price__name">Чай Кедровый</div>
-                    <div class="thanks__price__sum">
-                      <p class="gray">Сумма:</p>
-                      <p>3 000 ₽</p>
-                    </div>
-                    <div class="thanks__price__sale">
-                      <p class="gray">Скидка:</p>
-                      <p>- 80 ₽</p>
-                    </div>
-                    <div class="thanks__price__delivery"> 
-                      <p class="gray">Доставка:</p>
-                      <p>300 ₽</p>
+                <div class="thanks__info-item"> 
+                  <div class="thanks__info-img"><img src="img/icons/car.svg " alt=""/></div>
+                  <div class="thanks__info-text"> 
+                    <p class="regular">Информация о заказе:</p>
+                    <p>Покупка будет доставлена по адресу:</p>
+                    <p class="thanks__info-address">г. Москва, ул</p>
+                    <p class="thanks__info-phone">Телефон: +7 ххх ххх хххх</p>
+                  </div>
+                </div>
+                <div class="thanks__info-item"> 
+                  <div class="thanks__info-img"><img src="img/icons/chat.svg " alt=""/></div>
+                  <div class="thanks__info-text"> 
+                    <p>Если у вас возникли вопросы относительно заказа или нашей работы, пожалуйста, свяжитесь с нами:</p>
+                    <div class="thanks__contacts"> 
+                      <div class="thanks__contact"><a href="tel:111111111"> <img src="img/icons/phone.svg" alt=""/><span>+7 (495) 822 10 03</span></a></div>
+                      <div class="thanks__contact"><a href="mailto:shishka@gmail.com"> <img src="img/icons/mail.svg" alt=""/><span>shishka@gmail.com</span></a></div>
                     </div>
                   </div>
                 </div>
+                <div class="thanks__contacts-mobile">
+                  <div class="thanks__contact"><a href="tel:111111111"> <img src="img/icons/phone.svg" alt=""/><span>+7 (495) 822 10 03</span></a></div>
+                  <div class="thanks__contact"><a href="mailto:shishka@gmail.com"> <img src="img/icons/mail.svg" alt=""/><span>shishka@gmail.com</span></a></div>
+                </div>
               </div>
-              <div class="thanks__price-bottom"> 
-                <div class="thanks__price__summary">
-                  <div class="thanks__price__summary__text">Сумма заказа:</div>
-                  <div class="thanks__price__summary__number">3 220 руб.</div>
+              <div class="col-lg-5 thanks__price-block">
+                <div class="thanks__price-block-wrapper"> 
+                  <div class="decor"></div>
+                  <div class="thanks__price-top"> 
+                    <div class="thanks__price__img"> <img src="img/products/product-img.png" alt=""/></div>
+                    <div class="thanks__price__text"> 
+                      <div class="thanks__price__name">Чай Кедровый</div>
+                      <div class="thanks__price__sum">
+                        <p class="gray">Сумма:</p>
+                        <p>3 000 ₽</p>
+                      </div>
+                      <div class="thanks__price__sale">
+                        <p class="gray">Скидка:</p>
+                        <p>- 80 ₽</p>
+                      </div>
+                      <div class="thanks__price__delivery"> 
+                        <p class="gray">Доставка:</p>
+                        <p>300 ₽</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="thanks__price-bottom"> 
+                  <div class="thanks__price__summary">
+                    <div class="thanks__price__summary__text">Сумма заказа:</div>
+                    <div class="thanks__price__summary__number">3 220 руб.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -132,7 +144,7 @@
         <div class="sales__container">
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-2 sales__text">Узнавайте о скидках <span class="font-weight-bold">первыми!</span></div>
-            <form class="col-lg-10 sales__form" action="URL">
+            <form class="col-lg-10 sales__form" action="#">
               <div class="sales__inputs">
                 <input class="input-text" id="sales-name" type="text" placeholder="Ваше имя"/>
                 <input class="input-text" id="sales-email" type="text" placeholder="Введите e-mail*"/>
@@ -144,7 +156,7 @@
                 <div class="sales__button-mobile"><img src="img/icons/arrow-right.svg" alt=""/></div>
               </div>
               <div class="sales__button-wrapper">
-                <button class="sales__button button-white">Подписаться</button>
+                <button class="sales__button popup-link button-white" href="#popup-mailing">Подписаться</button>
               </div>
             </form>
           </div>
@@ -156,7 +168,7 @@
             <div class="row g-2">
               <div class="footer__contacts col-lg-4">
                 <div class="footer__contacts__header">
-                  <div class="footer__contacts__text footer__title">Поддержка клиентов</div><a class="footer__contacts__number" href="#"><img src="img/icons/phone.svg" alt=""/>							+7 (495) 822 10 03</a>
+                  <div class="footer__contacts__text footer__title">Поддержка клиентов</div><a class="footer__contacts__number" href="#"><img src="img/icons/phone.svg" alt=""/><span class="hover-effect">+7 (495) 822 10 03</span></a>
                   <div class="footer__contacts__time">С 9:00 до 18:00 (по Москве)</div>
                 </div>
                 <div class="footer__contacts__bottom">
@@ -190,21 +202,75 @@
           </div>
         </div>
       </footer>
-    </div><!-- <div id="popup" aria-hidden="true" class="popup">
-<div class="popup__wrapper">
-<div class="popup__content">
-<button data-close type="button" class="popup__close">Закрыть</button>
-<div class="popup__text">
-    <Text></Text></div>
-</div>
-</div>
-</div> -->
-    <script src="js/swiper.js?_v=20230211004738"></script>
-    <script src="js/tabs.js?_v=20230211004738"></script>
-    <script src="js/spollers.js?_v=20230211004738"></script>
-    <script src="js/app.js?_v=20230211004738"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20230211004738"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20230211004738"></script>
-    <script src="js/price-range.js?_v=20230211004738"></script>
+    </div>
+    <div class="popup" id="popup-mailing" aria-hidden="true">
+      <div class="popup__body"> 
+        <div class="popup__content">
+          <div class="popup__bg-img"> <img src="img/bg/bg-light-gren.png" alt=""/></div>
+          <div class="popup__mailing"> 
+            <form class="popup__mailing-form" action="URL">
+              <div class="popup__mailing-title">Узнавайте о скидках <span>первыми!</span></div>
+              <div class="popup__mailing__inputs">
+                <input class="input-text popup__mailing-input" type="text" placeholder="Ваше имя"/>
+                <input class="input-text popup__mailing-input" type="text" placeholder="Введите e-mail*"/>
+              </div>
+              <div class="sales__checkbox checkbox-custom">
+                <input id="popup-mailing-checkbox" type="checkbox"/>
+                <label class="decor" for="popup-mailing-checkbox"></label>
+                <label for="popup-mailing-checkbox">Соглашаюсь с условиями обработки персональных данных</label>
+              </div>
+              <button class="popup__mailing-btn button-white">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-cart" aria-hidden="true">
+      <div class="popup__body"> 
+        <div class="popup__content">
+          <button class="popup__close close-popup">
+            <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="23.627" cy="22.9373" r="22.9316" fill="#057487"></circle>
+              <circle cx="23.6295" cy="22.9373" r="13.9459" fill="white"></circle>
+              <path d="M30.9944 5.97052C36.7461 5.97052 40.5976 10.0086 40.5976 16.0148V29.8784C40.5976 35.8677 36.7461 39.904 30.9944 39.904H16.2842C10.5325 39.904 6.66406 35.8677 6.66406 29.8784V16.0148C6.66406 10.0086 10.5325 5.97052 16.2842 5.97052H30.9944ZM28.7378 17.7981C28.161 17.2195 27.2278 17.2195 26.6339 17.7981L23.6308 20.8164L20.6107 17.7981C20.0169 17.2195 19.0837 17.2195 18.5069 17.7981C17.93 18.3749 17.93 19.3251 18.5069 19.9002L21.5269 22.922L18.5069 25.9251C17.93 26.519 17.93 27.4521 18.5069 28.0273C18.7953 28.3157 19.1855 28.4701 19.5588 28.4701C19.949 28.4701 20.3223 28.3157 20.6107 28.0273L23.6308 25.0259L26.6509 28.0273C26.9393 28.3344 27.3126 28.4701 27.6859 28.4701C28.0761 28.4701 28.4494 28.3157 28.7378 28.0273C29.3147 27.4521 29.3147 26.519 28.7378 25.9421L25.7177 22.922L28.7378 19.9002C29.3147 19.3251 29.3147 18.3749 28.7378 17.7981Z" fill="#057487"></path>
+            </svg>
+          </button>
+          <div class="popup__cart">
+            <div class="cart__title"> <span>Корзина<span class="cart__title-number">0</span></span></div>
+            <div class="cart__main__item"> 
+              <div class="cart__main__item__info"> 
+                <div class="cart__main__item__img"> <img src="img/products/product-img.png" alt=""/></div>
+                <div class="cart__main__item__title"> <span>Чай Кедровый</span>
+                  <div class="cart__main__item__number-buttons"> 
+                    <button class="cart__main__item__button cart__main__item__button-plus">+</button>
+                    <div class="cart__main__item__number">1</div>
+                    <button class="cart__main__item__button cart__main__item__button-minus">-</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__main__item__sale">80 ₽</div>
+              <div class="cart__main__item__price">3 0000 ₽</div>
+              <div class="cart__main__item__buttons">
+                <button> <img src="img/icons/heart.svg" alt=""/></button>
+                <button> <img src="img/icons/trash.svg" alt=""/></button>
+              </div>
+            </div>
+            <div class="popup__cart__summ">Сумма заказа: 3 220 руб.</div>
+            <div class="popup__cart__buttons"> 
+              <div class="popup__cart__button button-blue-border">Продолжить покупки</div>
+              <div class="popup__cart__button button-blue">Оформление заказа</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/swiper.js?_v=20230213000538"></script>
+    <script src="js/tabs.js?_v=20230213000538"></script>
+    <script src="js/spollers.js?_v=20230213000538"></script>
+    <script src="js/app.js?_v=20230213000538"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20230213000538"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20230213000538"></script>
+    <script src="js/price-range.js?_v=20230213000538"></script>
+    <script src="js/popups.js?_v=20230213000538"></script>
   </body>
 </html>

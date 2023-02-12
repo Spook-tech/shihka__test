@@ -44,30 +44,81 @@ const blogSwiper = new Swiper('.blog__swiper', {
       }
     }
 });
-// Initialize a new Swiper object for the '.product-swiper' element
-const productSwiper = new Swiper('.product-swiper', {
-  // Set the navigation options for the Swiper
-  navigation: {
-    nextEl: '.product-button-next',
-    prevEl: '.product-button-prev',
-  },
 
-    // Set the breakpoint options for the Swiper
-   breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 10
-      },
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 37
-      }
-    }
+const productSwiper = new Swiper('.product-page-swiper', {
+  spaceBetween: 500,
+  centeredSlides: true,
+  slidesPerView: 1,
 });
+
+
+
+
+if (screenSize > 991){
+  const productMiniSwiper = new Swiper('.product-mini-pc-swiper', {
+    centeredSlides: true,
+    slideToClickedSlide: true,
+    
+    // Set the navigation options for the Swiper
+    navigation: {
+      nextEl: '.product-button-next',
+      prevEl: '.product-button-prev',
+    },
+  
+      // Set the breakpoint options for the Swiper
+     breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 37
+        }
+      },
+  });
+  productMiniSwiper.controller.control = productSwiper;
+  productSwiper.controller.control = productMiniSwiper;
+
+}else{
+  const productMiniMobileSwiper = new Swiper('.product-mini-swiper-mobile', {
+    centeredSlides: true,
+    slideToClickedSlide: true,
+    
+    // Set the navigation options for the Swiper
+    navigation: {
+      nextEl: '.product-button-next',
+      prevEl: '.product-button-prev',
+    },
+  
+      // Set the breakpoint options for the Swiper
+     breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 37
+        }
+      },
+  });
+  productMiniMobileSwiper.controller.control = productSwiper;
+  productSwiper.controller.control = productMiniMobileSwiper;
+}
+
+
+
+
+
 
 // Initialize a new Swiper object for the '.products-items-3' element
 const product3Swiper = new Swiper('.products-items-3', {
@@ -86,13 +137,13 @@ const product3Swiper = new Swiper('.products-items-3', {
         spaceBetween: 37
       }
     }
+    
 });
 
 
 // Initialize a new Swiper object for the '.starter-slider-swiper' element
 const starterSwiper = new Swiper('.starter-slider-swiper', {
   spaceBetween: 10,
-  effect: 'cube',
 
   navigation: {
     nextEl: '.starter-button-next',
@@ -101,6 +152,7 @@ const starterSwiper = new Swiper('.starter-slider-swiper', {
 
   pagination: {
     el: '.starter-pagination',
+    clickable: true,
   },
 
   slidesPerView: 1,
