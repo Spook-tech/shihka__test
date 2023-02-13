@@ -84,7 +84,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     productMiniSwiper.controller.control = productSwiper;
     productSwiper.controller.control = productMiniSwiper;
-  
+    
+    if (document.querySelector('.product-mini-pc-swiper')){
+      const slider = document.querySelector('.product-mini-pc-swiper');
+      console.log(((slider.offsetWidth-74) / 3) + 37);
+      slider.querySelector('.swiper-wrapper').style.left = `-${((slider.offsetWidth-74) / 3) + 37}px`;
+    }
+
   }else{
     const productMiniMobileSwiper = new Swiper('.product-mini-swiper-mobile', {
       centeredSlides: true,
@@ -95,22 +101,8 @@ document.addEventListener("DOMContentLoaded", function() {
         nextEl: '.product-button-next',
         prevEl: '.product-button-prev',
       },
-    
-        // Set the breakpoint options for the Swiper
-       breakpoints: {
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 10
-          },
-          480: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 37
-          }
-        },
+      slidesPerView: 3,
+      spaceBetween: 10
     });
     productMiniMobileSwiper.controller.control = productSwiper;
     productSwiper.controller.control = productMiniMobileSwiper;
